@@ -1,13 +1,17 @@
 /// <reference types="cypress" />
 
-import * as GETBoletos from '../../support/GETServices/boleto.request';
+import * as GETBoletos from '../../support/Services/boleto.request';
 
-describe('GET Boletos', () => {
+describe('Boletos', () => {
   it('Get em todos Boleto', () => {
     GETBoletos.boletoAll();
   })
 
   it('Get unico Boleto', () => {
     GETBoletos.singleBoleto();
+  })
+
+  it('Criar um Boleto', () => {
+    GETBoletos.postBoleto();
   })
 })

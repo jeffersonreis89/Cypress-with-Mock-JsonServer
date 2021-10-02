@@ -1,8 +1,8 @@
 /// <reference types="cypress" />
 
-import * as GETPessoas from '../../support/GETServices/pessoas.request';
+import * as GETPessoas from '../../support/Services/pessoas.request';
 
-describe('GET Pessoas', () => {
+describe('Pessoas', () => {
   it('Get em todas as pessoas', () => {
     GETPessoas.peopleAll();
   })
