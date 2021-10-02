@@ -1,5 +1,6 @@
 var url = "http://localhost:3000/";
-var numero = Math.random();
+var idAleatorio = Math.floor(Math.random() * 1000);
+var numeroBoleto = Math.random();
 
 export let boletoAll = () => {
   cy.request({
@@ -27,13 +28,13 @@ export let postBoleto = () => {
     method: 'POST',
     url: `${url}boleto/`,
     body: {
-      id: numero,
-      codBoleto: numero,
+      id: idAleatorio,
+      codBoleto: numeroBoleto,
       amount: 300
     }
   }).then(response => {
     expect(response.status).to.eq(201);
     expect(response.body).to.be.not.null;
-    expect(response.body).to.have.property("id", numero);
+    expect(response.body).to.have.property("id", idAleatorio);
   })
 }

@@ -20,5 +20,5 @@ json-server --watch .\db.json
 
 Rode o cypress
 ```
-npm run cypress:open
+npx cypress open
 ```
