@@ -1,9 +1,10 @@
+/// <reference types="cypress" />
 const cypress = require("cypress");
 
 function allPessoas() {
     return cy.request({
         method: 'GET',
-        url: 'pessoas',
+        url: 'http://localhost:3000/',
         failOnStatusCode: false,
     });
     
