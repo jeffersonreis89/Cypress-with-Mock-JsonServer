@@ -1,0 +1,40 @@
+{
+    "pessoas":[
+        {
+            "id": 1,
+            "nome": "Jeff",
+            "endereço": "Rua de tal "
+        },
+        {
+            "id": 2,
+            "nome": "Teste",
+            "endereço": "Rua de teste "
+        },
+        {
+            "id": 3,
+            "nome": "Api",
+            "endereço": "Rua de api "
+        }
+    ],
+
+    "boleto":[
+        {
+            "id": 1,
+            "codBoleto": "328372794984798375973979847349",
+            "amount": 50000
+        },
+        {
+            "id": 2,
+            "codBoleto": "328372794984798375973979847349",
+            "amount": 20000 
+        },
+        {
+            "id": 2,
+            "codBoleto": "8432748927239842",
+            "amount": 30000 
+        }
+
+    ]
+
+    
+}
