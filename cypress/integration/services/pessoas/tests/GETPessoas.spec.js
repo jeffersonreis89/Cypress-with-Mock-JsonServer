@@ -1,5 +1,4 @@
-
-import * as GETPessoas from '../request/GETPessoas.request'
+import * as GETPessoas from '../request/GETPessoas.request';
 
 describe('GET Pessoas', () => {
     it('Listar Todas as Pessoas', () => {
@@ -8,4 +7,4 @@ describe('GET Pessoas', () => {
             cy.log(response.statusText);
         }))
     });
-})
+});
